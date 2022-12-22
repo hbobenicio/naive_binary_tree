@@ -27,8 +27,6 @@ def inserir(no: No, dado: int):
 
 
 def buscar(no: No, dado: int) -> Optional[No]:
-    """Busca um No na arvore que contém o dado informado
-    """
     if no is None:
         return None
 
@@ -44,8 +42,6 @@ def buscar(no: No, dado: int) -> Optional[No]:
 
 
 def contem(no: No, dado: int) -> bool:
-    """Verifica se existe um No que possui um certo dado
-    """
     return buscar(no, dado) is not None
 
 
@@ -76,43 +72,3 @@ def remover(no: No, dado: int) -> Optional[No]:
     return no
 
 
-
-
-    # a = No(10)
-    # imprimir_pre_ordem(a)
-
-    # print('===')
-
-    # inserir(a, 5)
-    # imprimir_pre_ordem(a)
-
-    # print('===')
-
-    # inserir(a, 15)
-    # imprimir_pre_ordem(a)
-
-    # print('===')
-
-    # inserir(a, 16)
-    # imprimir_pre_ordem(a)
-
-    # assert contem(a, 10)
-    # assert contem(a, 5)
-    # assert contem(a, 15)
-    # assert contem(a, 16)
-    # assert not contem(a, 20)
-
-    # print('===')
-
-    # a = remover(a, 20)
-    # imprimir_pre_ordem(a)
-
-    # print('===')
-
-    # a = remover(a, 16)
-    # imprimir_pre_ordem(a)
-
-    # print('===')
-
-    # a = remover(a, 10)
-    # imprimir_pre_ordem(a)
