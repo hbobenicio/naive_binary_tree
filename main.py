@@ -1,7 +1,9 @@
+from typing import Optional
+
 import arvore
 
 if __name__ == '__main__':
-    raiz: arvore.No = None
+    raiz: Optional[arvore.No] = None
     while True:
         print('Selecione uma opção:')
         print('1 - Criar raiz')
@@ -21,9 +23,11 @@ if __name__ == '__main__':
         elif opcao == 2:
             print("Digite o valor(numérico e inteiro) a ser inserido: ", end='')
             dado = int(input())
+            assert raiz is not None
             arvore.inserir(raiz, dado)
         elif opcao == 5:
             print("Exibindo Pré-ordem")
+            assert raiz is not None
             arvore.imprimir_pre_ordem(raiz)
         elif opcao == 8:
             break
